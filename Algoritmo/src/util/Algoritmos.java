@@ -17,4 +17,18 @@ public abstract class Algoritmos {
 		
 		return suma;
 	}
+	
+	/**
+	 * Devuelve el factorial del numero especificado
+	 * 
+	 * @param numero	el numero que vamos a factorizar
+	 * @return			el factorial del numero especificado
+	 */
+	public static int factorial(int numero) {
+        if (numero == 0) {
+            return 1;
+        } else {
+            return numero * factorial(numero - 1);
+        }
+    }
 }
